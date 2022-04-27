@@ -1,4 +1,11 @@
-// The aim of this module is to expose an API for precompiling components.
+/**
+ * Author: Soumit Srimany
+ * Email: soumit.srim@gmail.com
+ * 
+ * The aim of this module is to provide
+ * functions for parsing (slightly modified version) 
+ * of HTML.
+ */
 
 class PreNode {
   toIndentTree(str, indentCount = 0) {
@@ -19,7 +26,26 @@ class PreNode {
   }
 }
 
-const OPENER_ONLY_TAGS = ['img', 'input', 'embed', 'br']
+// All singleton tags (tags that donot require
+// an ending markup) in HTML.
+const OPENER_ONLY_TAGS = [
+  "area", 
+  "base", 
+  "br", 
+  "col", 
+  "command", 
+  "embed", 
+  "hr", 
+  "img", 
+  "input", 
+  "keygen", 
+  "link", 
+  "meta", 
+  "param", 
+  "source", 
+  "track", 
+  "wbr", 
+]
 
 class AttrList extends Array {
 
