@@ -1,0 +1,16 @@
+{
+  "name": "pre-parser",
+  "version": "0.0.1",
+  "description": "Simple library for parsing html. Used in a front end framework(similar to React) that I developed for educational pruposes. ",
+  "main": "./src/pre-parser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html5",
+    "parser",
+    "html-parser"
+  ],
+  "author": "SoumitSrimany",
+  "license": "MIT"
+}
